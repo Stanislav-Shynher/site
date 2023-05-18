@@ -1,0 +1,272 @@
+/* Налаштування основного - початок */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Налаштування основного - кінець */
+
+/* Налаштування навігаційної панелі - початок */
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #263B7C;
+    height: 40px;
+}
+
+.Logo, .nav_menu {
+    margin-right: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.Logo img {
+    vertical-align: middle;
+    width: 36px;
+}
+
+.nav_menu li {
+    margin-right: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav_menu .page_now {
+    color: gold;
+}
+
+.nav_menu a {
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+.nav_menu button {
+    vertical-align: middle;
+    font-size: 24px;
+    background-color: #263B7C;;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.nav_menu a:hover {
+    color: yellow;
+}
+
+.nav_menu button:hover {
+    color: yellow;
+}
+
+.Logo:hover img {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+/* Налаштування навігаційної панелі - кінець */
+
+.testimg {
+    margin-top: 16px;
+    margin-left: 800px;
+    width: 250px;
+    height: 250px;
+}
+
+/* --- */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.content span {
+    font-weight: bold;
+}
+
+.photo img {
+    width: 150px;
+    height: 215px;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+    transition: transform 0.5s ease 0.3s;
+}
+
+.top {
+    width: 660px;
+    height: 100%;
+    margin-top: 16px;
+    border: black 1px solid;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: lightblue;
+}
+
+.top span {
+    font-weight: bold;
+}
+
+.top img {
+    position: absolute;
+}
+
+
+.top h1 {
+    font-weight: normal;
+    margin-left: 165px;
+    width: 500px;
+}
+
+.top p {
+    margin-left: 164px;
+    width: 500px;
+}
+
+.top button {
+    margin-top: 40px;
+    margin-left: 540px;
+}
+
+.top-about {
+    width: 660px;
+    height: 100%;
+    margin-top: 16px;
+    border: black 1px solid;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: lightblue;
+}
+
+.about h1 {
+    margin-left: 250px;
+}
+
+.about p {
+    text-align: center;
+    margin: 0px;
+}
+
+/* Налаштування футеру сайту - початок */
+
+.footer{
+    background:#263B7C;
+    padding:30px;
+    margin-top: auto;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+}
+
+.footer .row{
+    width:100%;
+    padding:0.6% 0%;
+    color:white;
+    font-size:0.8em;
+}
+
+.footer .row a{
+    text-decoration:none;
+    color: white;
+    transition:0.5s;
+}
+
+.footer .row a:hover{
+    color:yellow;
+}
+
+.footer .row ul{
+    width:100%;
+}
+
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+}
+
+.footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+}
+
+.footer button {
+    vertical-align: middle;
+    font-size: 1em;
+    background-color: #263B7C;;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    color: yellow;
+}
+
+/* Налаштування футеру сайту - кінець */
+
+/* Налаштування адаптації для телефонів і т.д. - початок */
+
+@media screen and (max-width: 990px) {
+
+    .nav_menu {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-color: #263B7C;
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .nav_menu li {
+        display: block;
+        padding-left: 35%;
+        margin-top: 16px;
+        padding-bottom: 24px;
+    }
+
+    .content {
+        margin-top: 300px;
+    }
+
+    .top {
+        width: 350px;
+    }
+
+    .top h1 {
+        margin-top: 250px;
+        margin-left: 0px;
+    }
+
+    .top p {
+        margin-left: 0px;
+    }
+
+    .top-about {
+        width: 350px;
+    }
+
+    .top-about h1 {
+        margin-left: 100px;
+    }
+
+    .Logo img {
+        height: 35px;
+    }
+}
+
+/* Налаштування адаптації для телефонів і т.д. - кінець */
